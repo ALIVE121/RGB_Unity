@@ -3,7 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - ChapterSelect
+  - Chapter_01
+  - Chapter_02
+  - Chapter_03
+  - Chapter_04
+  - Chapter_05
+  - Fade_In
+  - Fade_In2
   layers:
   - Default
   - TransparentFX
