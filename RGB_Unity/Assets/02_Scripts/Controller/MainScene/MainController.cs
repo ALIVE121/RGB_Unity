@@ -13,32 +13,39 @@ public class MainController : MonoBehaviour {
         ncount = 0.0f;
         scount = 9.5f;
         Fade_In = GameObject.FindWithTag("Fade_In");
+
+        StartCoroutine(DestroyFadeIn());
 	}
+    private IEnumerator DestroyFadeIn()
+    {
+        yield return new WaitForSeconds(9.5f);
+
+        Destroy(Fade_In.gameObject);
+    }
   
 	// Update is called once per frame
 	void Update () {
 		if(Input.GetKeyDown(KeyCode.Escape)){
 			Application.Quit();
             
-	}
-        
-        ncount += Time.deltaTime;
-        if (ncount > scount)
+	    }
+
+        if (Input.touchCount > 0)
         {
-            Destroy(Fade_In.gameObject);
-            if (Input.touchCount > 0)
+            if (Fade_In == null)
             {
                 Debug.Log("앙 기모띠");
                 SceneManager.LoadScene("ChapterSelect");
-            }
-            if (Input.GetMouseButtonDown(0))
-            {
-                Debug.Log("앙 기모띠");
-                SceneManager.LoadScene("ChapterSelect");
-            }
-            {
-            
             }
         }
-}
+        if (Input.GetMouseButtonDown(0))
+        {
+
+            if (Fade_In == null)
+            {
+                Debug.Log("앙 기모띠");
+                SceneManager.LoadScene("ChapterSelect");
+            }
+        }
+    }
 }

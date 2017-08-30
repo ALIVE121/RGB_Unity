@@ -12,6 +12,9 @@ TagManager:
   - Chapter_05
   - Fade_In
   - Fade_In2
+  - Stage_01
+  - Stage_92
+  - Glass
   layers:
   - Default
   - TransparentFX
