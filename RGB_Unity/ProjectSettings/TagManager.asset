@@ -15,6 +15,9 @@ TagManager:
   - Stage_01
   - Stage_92
   - Glass
+  - Wall
+  - Mirror
+  - Goal
   layers:
   - Default
   - TransparentFX

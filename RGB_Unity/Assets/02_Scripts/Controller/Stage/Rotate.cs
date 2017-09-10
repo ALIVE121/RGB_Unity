@@ -32,10 +32,7 @@ public class Rotate : MonoBehaviour {
 		Rotateircle ();
 		float ang = Mathf.Atan2 (pos.y, pos.x) * Mathf.Rad2Deg;
 		transform.rotation = Quaternion.AngleAxis (ang, Vector3.forward);
-        if (Input.touchCount > 0)
-        {
-            
-        }
+        
     }
 	private void Rotateircle(){
 		

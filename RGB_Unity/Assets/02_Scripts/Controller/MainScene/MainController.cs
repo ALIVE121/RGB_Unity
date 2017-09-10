@@ -4,8 +4,10 @@ using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class MainController : MonoBehaviour {
+    public UnityEngine.UI.Image fade;
     float scount;
     float ncount;
+    float fades = 1.0f;
     GameObject Fade_In;
 	// Use this for initialization
   
@@ -35,7 +37,9 @@ public class MainController : MonoBehaviour {
             if (Fade_In == null)
             {
                 Debug.Log("앙 기모띠");
-                SceneManager.LoadScene("ChapterSelect");
+              //  fades -= 0.1f;
+               // fade.color = new Color(0, 0, 0, fades);
+               SceneManager.LoadScene("ChapterSelect");
             }
         }
         if (Input.GetMouseButtonDown(0))
@@ -44,6 +48,8 @@ public class MainController : MonoBehaviour {
             if (Fade_In == null)
             {
                 Debug.Log("앙 기모띠");
+               // fades -= 0.1f;
+               // fade.color = new Color(0, 0, 0, fades);
                 SceneManager.LoadScene("ChapterSelect");
             }
         }

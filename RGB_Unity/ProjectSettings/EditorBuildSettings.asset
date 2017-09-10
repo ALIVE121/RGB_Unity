@@ -12,5 +12,14 @@ EditorBuildSettings:
     path: Assets/01_Scene/ChapterSelect/ChapterSelect.unity
     guid: aca12325da5338e459a504df5109c204
   - enabled: 1
-    path: Assets/01_Scene/StageSelect/StageSelect.unity
+    path: Assets/01_Scene/StageSelect/Chapter01.unity
     guid: a03a8b71b6dc23e47a2728f0d1723990
+  - enabled: 1
+    path: Assets/01_Scene/StageSelect/Chapter02_Hard.unity
+    guid: da3fdd0f4592f6c49ab4fa5b9c101722
+  - enabled: 1
+    path: Assets/01_Scene/Test/Stage_01.unity
+    guid: 3d108d86592bbf44eab55efaea166e7f
+  - enabled: 1
+    path: Assets/01_Scene/Test/Stage_01Scene.unity
+    guid: 609778acca45a2d4eb49cb2b723a06a9
